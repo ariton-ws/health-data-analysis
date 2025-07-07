@@ -1,0 +1,35 @@
+{
+  "chart": {
+    "title": "Medical doctors per 1,000 people",
+    "note": "Medical doctors include generalist physicians and specialist medical practitioners.",
+    "citation": "World Health Organization and OECD, via World Bank (2025)",
+    "originalChartUrl": "https://ourworldindata.org/grapher/physicians-per-1000-people?v=1&csvType=full&useColumnShortNames=false",
+    "selection": [
+      "Bhutan",
+      "Algeria",
+      "Bangladesh",
+      "Brazil",
+      "United States",
+      "World",
+      "Sweden"
+    ]
+  },
+  "columns": {
+    "Physicians (per 1,000 people)": {
+      "titleShort": "Physicians (per 1,000 people)",
+      "titleLong": "Physicians (per 1,000 people)",
+      "unit": "per 1,000 people",
+      "timespan": "1960-2021",
+      "type": "Numeric",
+      "owidVariableId": 1008656,
+      "shortName": "sh_med_phys_zs",
+      "lastUpdated": "2025-01-24",
+      "nextUpdate": "2026-01-24",
+      "citationShort": "World Health Organization and OECD, via World Bank (2025) – processed by Our World in Data",
+      "citationLong": "World Health Organization and OECD, via World Bank (2025) – processed by Our World in Data. “Physicians (per 1,000 people)” [dataset]. World Health Organization and OECD, via World Bank, “World Development Indicators” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1008656.metadata.json"
+    }
+  },
+  "dateDownloaded": "2025-06-22",
+  "activeFilters": {}
+}
