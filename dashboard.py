@@ -200,6 +200,26 @@ def format_number(value, decimals=2):
     except:
         return str(value)
 
+def get_merged_df():
+    # Load all datasets
+    gdp = load_gdp_recovery_data()
+    covid = load_covid_health_data()
+    adv = load_advanced_health_data()
+    # Outer join on REF_AREA
+    merged = covid.merge(gdp, on='REF_AREA', how='outer', suffixes=('', '_gdp'))
+    merged = merged.merge(adv, on='REF_AREA', how='outer', suffixes=('', '_adv'))
+    # Build column order: COVID Health, then GDP Recovery, then Advanced Health (no duplicates)
+    col_order = []
+    for cols in [covid.columns, gdp.columns, adv.columns]:
+        for c in cols:
+            if c not in col_order:
+                col_order.append(c)
+    merged = merged[col_order]
+    return merged
+
+# Create merged_df once
+merged_df = get_merged_df()
+
 def main():
     # Header
     st.markdown("""
@@ -465,8 +485,11 @@ def show_gdp_recovery():
             })
     
     with tab4:
-        st.markdown("### 📋 Data Table")
-        st.dataframe(df, use_container_width=True, key=f"data_table_GDP_Recovery")
+        st.markdown("### 📋 Merged Data Table (All Datasets)")
+        df_display = merged_df.copy().fillna('N/A')
+        for col in df_display.columns:
+            df_display[col] = df_display[col].astype(str)
+        st.dataframe(df_display.head(100), use_container_width=True, key="merged-table-gdp")
     
     with tab5:
         st.markdown("""
@@ -704,8 +727,11 @@ def show_covid_health():
             })
     
     with tab4:
-        st.markdown("### 📋 Data Table")
-        st.dataframe(df, use_container_width=True, key=f"data_table_COVID_Health")
+        st.markdown("### 📋 Merged Data Table (All Datasets)")
+        df_display = merged_df.copy().fillna('N/A')
+        for col in df_display.columns:
+            df_display[col] = df_display[col].astype(str)
+        st.dataframe(df_display.head(100), use_container_width=True, key="merged-table-covid")
     
     with tab5:
         st.markdown("""
@@ -952,8 +978,11 @@ def show_advanced_health():
             })
     
     with tab4:
-        st.markdown("### 📋 Data Table")
-        st.dataframe(df, use_container_width=True, key=f"data_table_Advanced_Health")
+        st.markdown("### 📋 Merged Data Table (All Datasets)")
+        df_display = merged_df.copy().fillna('N/A')
+        for col in df_display.columns:
+            df_display[col] = df_display[col].astype(str)
+        st.dataframe(df_display.head(100), use_container_width=True, key="merged-table-adv")
     
     with tab5:
         st.markdown("""
@@ -1023,24 +1052,14 @@ def show_data_explorer():
                  help="Total number of missing values across all columns")
     
     # Data preview
-    st.markdown("### 📋 Data Table")
-    
-    # Simple approach: convert to string and use st.table
-    df_display = df.copy()
-    
-    # Fill NaN values
-    df_display = df_display.fillna('N/A')
-    
-    # Convert all to string to avoid any issues
+    st.markdown("### 📋 Merged Data Table (All Datasets)")
+    df_display = merged_df.copy().fillna('N/A')
     for col in df_display.columns:
         df_display[col] = df_display[col].astype(str)
-    
-    # Show up to 100 rows
-    rows_to_show = min(100, len(df_display))
-    st.table(df_display.head(rows_to_show))
+    st.dataframe(df_display.head(100), use_container_width=True, key="merged-table-explorer")
     
     if len(df_display) > 100:
-        st.info(f"Showing first {rows_to_show} rows out of {len(df_display)} total rows.")
+        st.info(f"Showing first 100 rows out of {len(df_display)} total rows.")
     
     # Column information
     st.markdown("### 📈 Column Information")
