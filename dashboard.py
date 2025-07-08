@@ -339,8 +339,19 @@ def show_gdp_recovery():
             fig.update_layout(
                 plot_bgcolor='white',
                 paper_bgcolor='white',
-                font=dict(color='#111', size=20, family='Arial',),
-                title_font=dict(color='#111', size=24, family='Arial',),
+                font=dict(color='#111'),
+                xaxis=dict(
+                    title_font=dict(color='#111', size=20, family='Arial'),
+                    tickfont=dict(color='#111', size=18, family='Arial'),
+                    gridcolor='#e5e7eb',
+                    zeroline=False
+                ),
+                yaxis=dict(
+                    title_font=dict(color='#111', size=20, family='Arial'),
+                    tickfont=dict(color='#111', size=18, family='Arial'),
+                    gridcolor='#e5e7eb',
+                    zeroline=False
+                ),
                 legend=dict(
                     bgcolor='white',
                     bordercolor='#888',
@@ -353,18 +364,6 @@ def show_gdp_recovery():
                     yanchor='top',
                 ),
                 margin=dict(l=60, r=60, t=60, b=60),
-            )
-            fig.update_xaxes(
-                title_font=dict(color='#111', size=20, family='Arial', weight='bold'),
-                tickfont=dict(color='#111', size=18, family='Arial', weight='bold'),
-                gridcolor='#e5e7eb',
-                zerolinecolor='#e5e7eb',
-            )
-            fig.update_yaxes(
-                title_font=dict(color='#111', size=20, family='Arial', weight='bold'),
-                tickfont=dict(color='#111', size=18, family='Arial', weight='bold'),
-                gridcolor='#e5e7eb',
-                zerolinecolor='#e5e7eb',
             )
             if hasattr(fig, 'update_traces'):
                 fig.update_traces(textfont=dict(color='#111', size=18, family='Arial',), marker_line_color='#111', marker_line_width=2)
@@ -387,8 +386,19 @@ def show_gdp_recovery():
             fig.update_layout(
                 plot_bgcolor='white',
                 paper_bgcolor='white',
-                font=dict(color='#111', size=20, family='Arial',),
-                title_font=dict(color='#111', size=24, family='Arial',),
+                font=dict(color='#111'),
+                xaxis=dict(
+                    title_font=dict(color='#111', size=20, family='Arial'),
+                    tickfont=dict(color='#111', size=18, family='Arial'),
+                    gridcolor='#e5e7eb',
+                    zeroline=False
+                ),
+                yaxis=dict(
+                    title_font=dict(color='#111', size=20, family='Arial'),
+                    tickfont=dict(color='#111', size=18, family='Arial'),
+                    gridcolor='#e5e7eb',
+                    zeroline=False
+                ),
                 legend=dict(
                     bgcolor='white',
                     bordercolor='#888',
@@ -401,18 +411,6 @@ def show_gdp_recovery():
                     yanchor='top',
                 ),
                 margin=dict(l=60, r=60, t=60, b=60),
-            )
-            fig.update_xaxes(
-                title_font=dict(color='#111', size=20, family='Arial', weight='bold'),
-                tickfont=dict(color='#111', size=18, family='Arial', weight='bold'),
-                gridcolor='#e5e7eb',
-                zerolinecolor='#e5e7eb',
-            )
-            fig.update_yaxes(
-                title_font=dict(color='#111', size=20, family='Arial', weight='bold'),
-                tickfont=dict(color='#111', size=18, family='Arial', weight='bold'),
-                gridcolor='#e5e7eb',
-                zerolinecolor='#e5e7eb',
             )
             if hasattr(fig, 'update_traces'):
                 fig.update_traces(textfont=dict(color='#111', size=18, family='Arial',), marker_line_color='#111', marker_line_width=2)
@@ -432,8 +430,19 @@ def show_gdp_recovery():
             fig.update_layout(
                 plot_bgcolor='white',
                 paper_bgcolor='white',
-                font=dict(color='#111', size=20, family='Arial',),
-                title_font=dict(color='#111', size=24, family='Arial',),
+                font=dict(color='#111'),
+                xaxis=dict(
+                    title_font=dict(color='#111', size=20, family='Arial'),
+                    tickfont=dict(color='#111', size=18, family='Arial'),
+                    gridcolor='#e5e7eb',
+                    zeroline=False
+                ),
+                yaxis=dict(
+                    title_font=dict(color='#111', size=20, family='Arial'),
+                    tickfont=dict(color='#111', size=18, family='Arial'),
+                    gridcolor='#e5e7eb',
+                    zeroline=False
+                ),
                 legend=dict(
                     bgcolor='white',
                     bordercolor='#888',
@@ -569,8 +578,19 @@ def show_covid_health():
             fig.update_layout(
                 plot_bgcolor='white',
                 paper_bgcolor='white',
-                font=dict(color='#111', size=20, family='Arial',),
-                title_font=dict(color='#111', size=24, family='Arial',),
+                font=dict(color='#111'),
+                xaxis=dict(
+                    title_font=dict(color='#111', size=20, family='Arial'),
+                    tickfont=dict(color='#111', size=18, family='Arial'),
+                    gridcolor='#e5e7eb',
+                    zeroline=False
+                ),
+                yaxis=dict(
+                    title_font=dict(color='#111', size=20, family='Arial'),
+                    tickfont=dict(color='#111', size=18, family='Arial'),
+                    gridcolor='#e5e7eb',
+                    zeroline=False
+                ),
                 legend=dict(
                     bgcolor='white',
                     bordercolor='#888',
@@ -583,18 +603,6 @@ def show_covid_health():
                     yanchor='top',
                 ),
                 margin=dict(l=60, r=60, t=60, b=60),
-            )
-            fig.update_xaxes(
-                title_font=dict(color='#111', size=20, family='Arial', weight='bold'),
-                tickfont=dict(color='#111', size=18, family='Arial', weight='bold'),
-                gridcolor='#e5e7eb',
-                zerolinecolor='#e5e7eb',
-            )
-            fig.update_yaxes(
-                title_font=dict(color='#111', size=20, family='Arial', weight='bold'),
-                tickfont=dict(color='#111', size=18, family='Arial', weight='bold'),
-                gridcolor='#e5e7eb',
-                zerolinecolor='#e5e7eb',
             )
             if hasattr(fig, 'update_traces'):
                 fig.update_traces(textfont=dict(color='#111', size=18, family='Arial',), marker_line_color='#111', marker_line_width=2)
@@ -617,8 +625,19 @@ def show_covid_health():
             fig.update_layout(
                 plot_bgcolor='white',
                 paper_bgcolor='white',
-                font=dict(color='#111', size=20, family='Arial',),
-                title_font=dict(color='#111', size=24, family='Arial',),
+                font=dict(color='#111'),
+                xaxis=dict(
+                    title_font=dict(color='#111', size=20, family='Arial'),
+                    tickfont=dict(color='#111', size=18, family='Arial'),
+                    gridcolor='#e5e7eb',
+                    zeroline=False
+                ),
+                yaxis=dict(
+                    title_font=dict(color='#111', size=20, family='Arial'),
+                    tickfont=dict(color='#111', size=18, family='Arial'),
+                    gridcolor='#e5e7eb',
+                    zeroline=False
+                ),
                 legend=dict(
                     bgcolor='white',
                     bordercolor='#888',
@@ -631,18 +650,6 @@ def show_covid_health():
                     yanchor='top',
                 ),
                 margin=dict(l=60, r=60, t=60, b=60),
-            )
-            fig.update_xaxes(
-                title_font=dict(color='#111', size=20, family='Arial', weight='bold'),
-                tickfont=dict(color='#111', size=18, family='Arial', weight='bold'),
-                gridcolor='#e5e7eb',
-                zerolinecolor='#e5e7eb',
-            )
-            fig.update_yaxes(
-                title_font=dict(color='#111', size=20, family='Arial', weight='bold'),
-                tickfont=dict(color='#111', size=18, family='Arial', weight='bold'),
-                gridcolor='#e5e7eb',
-                zerolinecolor='#e5e7eb',
             )
             if hasattr(fig, 'update_traces'):
                 fig.update_traces(textfont=dict(color='#111', size=18, family='Arial',), marker_line_color='#111', marker_line_width=2)
@@ -662,8 +669,19 @@ def show_covid_health():
             fig.update_layout(
                 plot_bgcolor='white',
                 paper_bgcolor='white',
-                font=dict(color='#111', size=20, family='Arial',),
-                title_font=dict(color='#111', size=24, family='Arial',),
+                font=dict(color='#111'),
+                xaxis=dict(
+                    title_font=dict(color='#111', size=20, family='Arial'),
+                    tickfont=dict(color='#111', size=18, family='Arial'),
+                    gridcolor='#e5e7eb',
+                    zeroline=False
+                ),
+                yaxis=dict(
+                    title_font=dict(color='#111', size=20, family='Arial'),
+                    tickfont=dict(color='#111', size=18, family='Arial'),
+                    gridcolor='#e5e7eb',
+                    zeroline=False
+                ),
                 legend=dict(
                     bgcolor='white',
                     bordercolor='#888',
@@ -808,8 +826,19 @@ def show_advanced_health():
             fig.update_layout(
                 plot_bgcolor='white',
                 paper_bgcolor='white',
-                font=dict(color='#111', size=20, family='Arial',),
-                title_font=dict(color='#111', size=24, family='Arial',),
+                font=dict(color='#111'),
+                xaxis=dict(
+                    title_font=dict(color='#111', size=20, family='Arial'),
+                    tickfont=dict(color='#111', size=18, family='Arial'),
+                    gridcolor='#e5e7eb',
+                    zeroline=False
+                ),
+                yaxis=dict(
+                    title_font=dict(color='#111', size=20, family='Arial'),
+                    tickfont=dict(color='#111', size=18, family='Arial'),
+                    gridcolor='#e5e7eb',
+                    zeroline=False
+                ),
                 legend=dict(
                     bgcolor='white',
                     bordercolor='#888',
@@ -822,18 +851,6 @@ def show_advanced_health():
                     yanchor='top',
                 ),
                 margin=dict(l=60, r=60, t=60, b=60),
-            )
-            fig.update_xaxes(
-                title_font=dict(color='#111', size=20, family='Arial', weight='bold'),
-                tickfont=dict(color='#111', size=18, family='Arial', weight='bold'),
-                gridcolor='#e5e7eb',
-                zerolinecolor='#e5e7eb',
-            )
-            fig.update_yaxes(
-                title_font=dict(color='#111', size=20, family='Arial', weight='bold'),
-                tickfont=dict(color='#111', size=18, family='Arial', weight='bold'),
-                gridcolor='#e5e7eb',
-                zerolinecolor='#e5e7eb',
             )
             if hasattr(fig, 'update_traces'):
                 fig.update_traces(textfont=dict(color='#111', size=18, family='Arial',), marker_line_color='#111', marker_line_width=2)
@@ -856,8 +873,19 @@ def show_advanced_health():
             fig.update_layout(
                 plot_bgcolor='white',
                 paper_bgcolor='white',
-                font=dict(color='#111', size=20, family='Arial',),
-                title_font=dict(color='#111', size=24, family='Arial',),
+                font=dict(color='#111'),
+                xaxis=dict(
+                    title_font=dict(color='#111', size=20, family='Arial'),
+                    tickfont=dict(color='#111', size=18, family='Arial'),
+                    gridcolor='#e5e7eb',
+                    zeroline=False
+                ),
+                yaxis=dict(
+                    title_font=dict(color='#111', size=20, family='Arial'),
+                    tickfont=dict(color='#111', size=18, family='Arial'),
+                    gridcolor='#e5e7eb',
+                    zeroline=False
+                ),
                 legend=dict(
                     bgcolor='white',
                     bordercolor='#888',
@@ -870,18 +898,6 @@ def show_advanced_health():
                     yanchor='top',
                 ),
                 margin=dict(l=60, r=60, t=60, b=60),
-            )
-            fig.update_xaxes(
-                title_font=dict(color='#111', size=20, family='Arial', weight='bold'),
-                tickfont=dict(color='#111', size=18, family='Arial', weight='bold'),
-                gridcolor='#e5e7eb',
-                zerolinecolor='#e5e7eb',
-            )
-            fig.update_yaxes(
-                title_font=dict(color='#111', size=20, family='Arial', weight='bold'),
-                tickfont=dict(color='#111', size=18, family='Arial', weight='bold'),
-                gridcolor='#e5e7eb',
-                zerolinecolor='#e5e7eb',
             )
             if hasattr(fig, 'update_traces'):
                 fig.update_traces(textfont=dict(color='#111', size=18, family='Arial',), marker_line_color='#111', marker_line_width=2)
@@ -901,8 +917,19 @@ def show_advanced_health():
             fig.update_layout(
                 plot_bgcolor='white',
                 paper_bgcolor='white',
-                font=dict(color='#111', size=20, family='Arial',),
-                title_font=dict(color='#111', size=24, family='Arial',),
+                font=dict(color='#111'),
+                xaxis=dict(
+                    title_font=dict(color='#111', size=20, family='Arial'),
+                    tickfont=dict(color='#111', size=18, family='Arial'),
+                    gridcolor='#e5e7eb',
+                    zeroline=False
+                ),
+                yaxis=dict(
+                    title_font=dict(color='#111', size=20, family='Arial'),
+                    tickfont=dict(color='#111', size=18, family='Arial'),
+                    gridcolor='#e5e7eb',
+                    zeroline=False
+                ),
                 legend=dict(
                     bgcolor='white',
                     bordercolor='#888',
